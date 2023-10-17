@@ -1,0 +1,145 @@
+:root {
+    --color: #3c3163;
+    --transition-time: 0.5s;
+}
+.cards-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: 0 25px;
+}
+
+#contact-h1{
+    position: relative;
+    top: 3%;
+    font-size: 90px;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    color: #212121;
+}
+#models2-hr{
+    border: 1px solid #212121;
+    width: 20%;
+    margin-left: 33%;
+}
+.card {
+    --bg-filter-opacity: 0.5;
+    height: 500px;
+    width: 300px;
+    font-size: 1em;
+    color: black;
+    border-radius: 1em;
+    padding: 1em;
+    /*margin: 2em;*/
+    display: flex;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 2em -1em black;
+    transition: all, var(--transition-time);
+    position: relative;
+    overflow: hidden;
+    border: 8px solid #ccc;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: rotate(0);
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 1.5em;
+
+}
+
+.card p {
+    font-size: 0.75em;
+    margin-top: 0.5em;
+
+}
+
+.card .tags {
+    display: flex;
+}
+
+.card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+    background: #BF7497;
+    color: white;
+}
+
+.card:before, .card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, var(--transition-time);
+    transition-timing-function: ease-in-out;
+}
+
+.card:before {
+    width: 250%;
+    height: 250%;
+}
+
+.card:after {
+    background: rgba(158, 188, 166, 0.5);
+    width: 200%;
+    height: 200%;
+}
+
+.card:hover {
+    color: black;
+}
+
+.card:hover:before, .card:hover:after {
+    transform: scale(1);
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1052px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr 1fr;
+        margin:  0 20%;
+    }
+    #contact-h1{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+        margin-left: 20%;
+    }
+    #contact-h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards-wrapper {
+        padding: 4rem 2rem;
+    }
+    .card {
+        max-width: calc(100vw - 4rem);
+    }
+}

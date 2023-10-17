@@ -1,0 +1,38 @@
+.container1{
+    padding: 5% 10%;
+}
+.my-form {
+    color: #303338;
+
+}
+.my-form .btn-default {
+    background-color: #214842;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.my-form .btn-default:hover {
+    background-color: #9ebca6;
+    color: white;
+}
+
+.my-form .form-control {
+    border-radius: 10px;
+    border-color: #8c8b8b;
+}
+.my-form input,
+.my-form textarea{
+    background: #fafafa;
+    border: 1px solid #303338;
+}
+.contact-img img{
+    width: 500px;
+    height: 600px;
+}
+.map2{
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #214842;
+    margin-top: 35px;
+}

@@ -1,0 +1,84 @@
+.page{
+    height: 900px;
+    margin-bottom: -5%;
+}
+.about2-section{
+    background: url(../img/about2.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.inner-container{
+    width: 90%;
+    padding: 130px 100px;
+    margin-top: -3%;
+    margin-left: 5%;
+}
+
+.inner-container h1{
+    font-size: 40px;
+    font-weight: 900;
+    float: right;
+    color: #545454;
+}
+
+.text1{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+}
+@media screen and (max-width:400px) {
+    .text1{
+        font-size: 3px;
+    }
+}
+
+    @media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about2-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 50px;
+        margin-top: 0;
+    }
+    .inner-container h1{
+        font-size: 30px;
+    }
+    .text1{
+        font-size: 12px;
+        line-height: 25px;
+    }
+}
+
+mark {
+    --color1: #9ebca6;
+    --color2: #9ebca6;
+    --bg-height: 30%;
+    all: unset;
+    background-image: linear-gradient(var(--color1), var(--color2));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 var(--bg-height);
+    animation: highlight 800ms 1 ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+
+@keyframes highlight {
+    to {
+        background-size: 100% var(--bg-height);
+    }
+}

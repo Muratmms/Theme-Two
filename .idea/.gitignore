@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+<<<<<<< HEAD
+/dataSources/
+=======
+/../../../../../:\xampp\htdocs\ThemeTwo\.idea/dataSources/
+>>>>>>> e61df063419a0bcc415d7c428237cd006028d261
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
